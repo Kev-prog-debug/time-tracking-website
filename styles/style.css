@@ -50,6 +50,7 @@
   border-radius: 10px;
   padding: 20px 30px;
   font-family: "Rubik", sans-serif;
+  color: white;
 }
 
 .work-info .title,
@@ -202,6 +203,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 .dashboard {

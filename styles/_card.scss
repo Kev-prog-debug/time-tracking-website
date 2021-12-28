@@ -1,0 +1,72 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 350px));
+  grid-template-rows: repeat(2, minmax(200px, 250px));
+  grid-gap: 20px;
+}
+
+.work {
+  background-color: $work;
+}
+.play {
+  background-color: $play;
+}
+.study {
+  background-color: $study;
+}
+.exercise {
+  background-color: $exercise;
+}
+.social {
+  background-color: $social;
+}
+.self-care {
+  background-color: $selfCare;
+}
+
+.work-info,
+.play-info,
+.study-info,
+.exercise-info,
+.social-info,
+.self-care-info {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background-color: $darkBlue;
+  width: 100%;
+  height: 85%;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-family: $font;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-weight: 300;
+    }
+  }
+  .hour {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $desaturatedBlue;
+  }
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+}

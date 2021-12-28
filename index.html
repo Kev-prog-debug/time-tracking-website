@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dashboard">
+    <section class="user-profile">
+      <div class="profile">
+        <img src="/images/image-jeremy.png" class="profile-img" alt="">
+        <div>
+          <p>
+            Report for
+          </p>
+          <h1>Jeremy <br /> Robson</h1>
+        </div>
+      </div>
+      <div id="timeFramesBtn">
+        <button value="daily" id="daily-timeFrames-btn">Daily</button>
+        <button value="weekly" id="weekly-timeFrames-btn">Weekly</button>
+        <button value="monthly" id="monthly-timeFrames-btn">Monthly</button>
+      </div>
+    </section>
+    <section class="card-container">
+      <div class="work"><img src="/images/icon-work.svg" alt="">
+        <section class="work-info">
+          <div class="title">
+            <h3>Work</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="timeFrames">
+            <h1 id="current-work-hour">5hrs</h1>
+            <h4 id="previous-work-hour">Yesterday - 7hrs</h4>
+          </div>
+        </section>
+      </div>
+      <div class="play"><img src="/images/icon-play.svg" alt="">
+        <section class="play-info">
+          <div class="title">
+            <h3>Play</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="timeFrames">
+            <h1 id="current-play-hour">1hr</h1>
+            <h4 id="previous-play-hour">Yesterday - 2hrs</h4>
+
+          </div>
+        </section>
+      </div>
+      <div class="study"><img src="/images/icon-study.svg" alt="">
+        <section class="study-info">
+          <div class="title">
+            <h3>Study</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="timeFrames">
+            <h1 id="current-study-hour">0hr</h1>
+            <h4 id="previous-study-hour">Yesterday - 1hr</h4>
+          </div>
+        </section>
+      </div>
+      <div class="exercise"><img src="/images/icon-exercise.svg" alt="">
+        <section class="exercise-info">
+          <div class="title">
+            <h3>Exercise</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="timeFrames">
+            <h1 id="current-exercise-hour">1hr</h1>
+            <h4 id="previous-exercise-hour">Yesterday - 1hr</h4>
+          </div>
+        </section>
+      </div>
+      <div class="social"><img src="/images/icon-social.svg" alt="">
+        <section class="social-info">
+          <div class="title">
+            <h3>Social</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="timeFrames">
+            <h1 id="current-social-hour">1hr</h1>
+            <h4 id="previous-social-hour">Yesterday - 3hrs</h4>
+          </div>
+        </section>
+      </div>
+      <div class="self-care"><img src="/images/icon-self-care.svg" alt="">
+        <section class="self-care-info">
+          <div class="title">
+            <h3>Self-care</h3>
+            <img src="/images/icon-ellipsis.svg" alt="">
+          </div>
+          <div class="timeFrames">
+            <h1 id="current-self-care-hour">0hr</h1>
+            <h4 id="previous-self-care-hour">Yesterday - 1hr</h4>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

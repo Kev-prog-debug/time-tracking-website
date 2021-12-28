@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+.card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 350px))[3];
+      grid-template-columns: repeat(3, minmax(300px, 350px));
+  -ms-grid-rows: (minmax(200px, 250px))[2];
+      grid-template-rows: repeat(2, minmax(200px, 250px));
+  grid-gap: 20px;
+}
+
+.work {
+  background-color: #ff8c66;
+}
+
+.play {
+  background-color: #56c2e6;
+}
+
+.study {
+  background-color: #bd005e;
+}
+
+.exercise {
+  background-color: #4acf81;
+}
+
+.social {
+  background-color: #7536d3;
+}
+
+.self-care {
+  background-color: #f1c65b;
+}
+
+.work-info,
+.play-info,
+.study-info,
+.exercise-info,
+.social-info,
+.self-care-info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background-color: #0b1047;
+  width: 100%;
+  height: 85%;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-family: "Rubik", sans-serif;
+}
+
+.work-info .title,
+.play-info .title,
+.study-info .title,
+.exercise-info .title,
+.social-info .title,
+.self-care-info .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-info .title h3,
+.play-info .title h3,
+.study-info .title h3,
+.exercise-info .title h3,
+.social-info .title h3,
+.self-care-info .title h3 {
+  font-weight: 300;
+}
+
+.work-info .hour,
+.play-info .hour,
+.study-info .hour,
+.exercise-info .hour,
+.social-info .hour,
+.self-care-info .hour {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.work-info h4,
+.play-info h4,
+.study-info h4,
+.exercise-info h4,
+.social-info h4,
+.self-care-info h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #6f76c8;
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+}
+
+.user-profile {
+  height: 100%;
+  width: 250px;
+  max-width: 300px;
+  margin: 0 20px;
+  border: none;
+}
+
+.user-profile .profile {
+  padding: 25px 20px;
+  background-color: #5847eb;
+  border: none;
+  border-radius: 10px;
+  height: 50%;
+}
+
+.user-profile .profile .profile-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.user-profile .profile p {
+  font-weight: lighter;
+  font-family: "Rubik", sans-serif;
+  margin: 5px 0;
+}
+
+.user-profile .profile h1 {
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  word-spacing: 8px !important;
+  margin: 5px 0;
+}
+
+.user-profile #timeFramesBtn {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0b1047;
+  border: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.user-profile #timeFramesBtn button {
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  margin: 5px 0;
+  color: #6f76c8;
+}
+
+.user-profile #timeFramesBtn button:hover {
+  color: white;
+}
+
+.user-profile #timeFramesBtn button:active {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: 1600px;
+  width: 80%;
+  max-height: 70vh;
+}
+
+@media screen and (max-width: 675px) {
+  .dashboard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user-profile {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .user-profile .profile {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+    height: auto;
+  }
+  .user-profile .profile h1 {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: auto;
+  }
+  .user-profile .profile p {
+    margin-left: auto;
+  }
+  .user-profile #timeFramesBtn {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .timeFrames {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .self-care {
+    width: 100%;
+    height: 200px;
+  }
+  .work-info .timeFrames,
+  .play-info .timeFrames,
+  .study-info .timeFrames,
+  .exercise-info .timeFrames,
+  .social-info .timeFrames,
+  .self-care-info .timeFrames {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .work-info h4,
+  .play-info h4,
+  .study-info h4,
+  .exercise-info h4,
+  .social-info h4,
+  .self-care-info h4 {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
